@@ -39,7 +39,7 @@
     }
     switch (settings.format) {
       case "city":
-        return timezone_text.split('/')[1];
+        return timezone_text.split('/')[1].replace('_', ' ');
         break;
       default:
         return timezone_text;
